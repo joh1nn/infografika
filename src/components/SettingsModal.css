@@ -1,0 +1,162 @@
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 20px;
+}
+
+.modal-box {
+  background: #0f0f18;
+  border: 1px solid #252535;
+  border-radius: 14px;
+  width: 100%;
+  max-width: 540px;
+  max-height: 90vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid #1e1e2a;
+}
+
+.modal-title { font-size: 16px; font-weight: 600; color: #eee; }
+
+.modal-close {
+  background: none;
+  border: none;
+  color: #666;
+  font-size: 22px;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0 4px;
+}
+.modal-close:hover { color: #e24b4b; }
+
+.modal-desc {
+  font-size: 13px;
+  color: #666;
+  padding: 12px 20px;
+  line-height: 1.5;
+}
+
+.providers-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 0 20px 16px;
+}
+
+.provider-card {
+  border: 1px solid #1e1e2a;
+  border-radius: 10px;
+  padding: 12px 14px;
+  cursor: pointer;
+  transition: all 0.15s;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.provider-card:hover { border-color: #534AB7; background: #110e20; }
+.provider-card.active { border-color: #534AB7; background: #110e22; }
+
+.provider-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.provider-left {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.provider-radio { font-size: 14px; color: #534AB7; width: 16px; }
+.provider-icon { font-size: 16px; }
+.provider-name { font-size: 14px; font-weight: 500; color: #ddd; }
+
+.provider-free {
+  font-size: 11px;
+  color: #4caf7a;
+  background: #0a1a10;
+  border: 1px solid #1a3a20;
+  padding: 2px 8px;
+  border-radius: 20px;
+  white-space: nowrap;
+}
+
+.provider-key-row {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+}
+
+.provider-key-input {
+  flex: 1;
+  font-size: 12px !important;
+  padding: 6px 10px !important;
+  background: #0a0a12 !important;
+}
+
+.toggle-vis {
+  background: #1a1a25;
+  border: 1px solid #252535;
+  border-radius: 6px;
+  padding: 5px 8px;
+  font-size: 13px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.get-key-link {
+  font-size: 11px;
+  color: #7a70e0;
+  text-decoration: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.get-key-link:hover { color: #a89cff; text-decoration: underline; }
+
+.modal-footer {
+  display: flex;
+  gap: 8px;
+  justify-content: flex-end;
+  padding: 14px 20px;
+  border-top: 1px solid #1e1e2a;
+}
+
+.btn-cancel {
+  padding: 8px 18px;
+  font-size: 13px;
+  background: transparent;
+  border: 1px solid #2a2a38;
+  border-radius: 8px;
+  color: #888;
+  cursor: pointer;
+}
+.btn-cancel:hover { border-color: #444; color: #ccc; }
+
+.btn-save {
+  padding: 8px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  background: #534AB7;
+  border: none;
+  border-radius: 8px;
+  color: #fff;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+.btn-save:hover { opacity: 0.88; }
